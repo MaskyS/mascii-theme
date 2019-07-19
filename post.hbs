@@ -54,8 +54,8 @@ into the {body} of the default.hbs template --}}
             {{!-- Email subscribe form at the bottom of the page --}}
             {{#if @labs.subscribers}}
             <section class="subscribe-form">
-                <h3 class="subscribe-form-title">Subscribe to {{@site.title}}</h3>
-                <p>Get the latest posts delivered right to your inbox</p>
+                <h3 class="subscribe-form-title">Let's keep in touch</h3>
+                <p>Subscribe and I'll let you know when I post. No spam, I promise.</p>
                 {{subscribe_form placeholder="youremail@example.com"}}
             </section>
             {{/if}}
@@ -75,11 +75,15 @@ into the {body} of the default.hbs template --}}
 
             </footer>
 
-            {{!--
             <section class="post-full-comments">
-                If you want to embed comments, this is a good place to do it!
+                <script src="https://utteranc.es/client.js"
+                        repo="MaskyS/comments"
+                        issue-term="title"
+                        theme="github-light"
+                        crossorigin="anonymous"
+                        async>
+                </script>
             </section>
-            --}}
 
         </article>
 
